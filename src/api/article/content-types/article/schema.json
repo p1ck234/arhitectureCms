@@ -34,6 +34,17 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "Tag"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
